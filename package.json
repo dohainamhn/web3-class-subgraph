@@ -4,7 +4,7 @@
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy": "graph deploy --node https://api.studio.thegraph.com/deploy/ MasterChef",
+    "deploy": "graph deploy  --product hosted-service --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ dohainamhn/nam-coin subgraph.yaml --access-token",
     "create-local": "graph create --node http://localhost:8020/ MasterChef",
     "remove-local": "graph remove --node http://localhost:8020/ MasterChef",
     "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 MasterChef"
